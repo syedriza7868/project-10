@@ -14,8 +14,8 @@
 
 - *It took me around 10 hours to complete the webpage.*
 
-# Live link of projects:
- [project 10]()
+
+ # [Live project 10](https://loquacious-kleicha-38544a.netlify.app/)
 
  ### Preview:
 
