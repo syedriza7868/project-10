@@ -1,0 +1,290 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-family: "Poppins";
+}
+ body {
+ background-image: url(./images/background.jpeg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.logo {
+ position: relative;
+ left: 3rem;
+ top: 3rem;
+ color: white;
+}
+.list{
+ position: relative;
+ display: flex;
+ padding: 5px;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ width: 40%;
+ left: 32%;
+ list-style: none;
+}
+.list-item {
+ position: relative;
+ bottom: 1rem;
+ font-size: 1.3rem;
+ list-style: none;
+ color: #ffff;
+cursor: pointer;
+}
+nav::after{
+ content: "";
+ width: 66%;
+ height: 2px;
+ background-color: #fff;
+ position: absolute;
+ right: 1rem;
+ bottom: 80%;
+}
+.contact-info p {
+ position: relative;
+ display: flex;
+ left: 84%;
+ bottom: 6rem;
+ font-size: 1.3rem;
+ color: white;
+}
+.phone-call {
+ position: relative;
+ display: flex;
+ color: #fff;
+ width: 3%;
+ left: 80%;
+ bottom: 3rem;
+ cursor: pointer;
+} 
+.content {
+ display: flex;
+ font-family: sans-serif;
+ font-size: 40px;
+ font-weight: bolder;
+ margin-left: 6%;
+ margin-top: 8%;
+ color: #fff;
+}
+.btn {
+ display: flex;
+ height: 120%;
+ width: 15%;
+ font-size: 20px;
+ border-radius: 30px;
+ border-color: #fff;
+ background-color: transparent;
+ padding: 10px 10px 10px;
+ position: relative;
+ right: 35%;
+ top: 16rem;
+ color: #fff;
+ cursor: pointer;
+}
+ .info-01  {
+ position: relative;
+ background-color: rgba(255, 255, 255, 0.189);
+ width: 200px;
+ padding: 5rem 1rem 1rem 2rem;
+ font-size: 1.1rem;
+ font-weight: 400;
+ z-index: 1;
+ height: 50px;
+ top: -12rem;
+ left: 56rem;
+}
+.info-01 p {
+ color: #fff;
+}
+.puzzle {
+ position: relative;
+ bottom: 6rem;
+ height: 40px;
+ width: 50%;
+ background-color: #fff;
+ border-radius: 15px;
+}
+.info-02 {
+ position: relative;
+ background-color: rgba(255, 255, 255, 0.189);
+ width: 200px;
+ padding: 5rem 1rem 1rem 2rem;
+ font-size: 1.1rem;
+ font-weight: 400;
+ z-index: 1;
+ height: 50px;
+ left: 42rem;
+ bottom: 4rem;
+}
+.info-02 p {
+ color: #fff;
+}
+.bulb {
+ position: relative;
+ height: 45px;
+ width: 40%;
+ background-color: #fff;
+ border-radius: 15px;
+ bottom: 7rem;
+}
+.line-1 {
+ position: absolute;
+ display: flex;
+ transform: rotate(91deg);
+ left: 83%;
+ bottom: 27.3%;
+}
+.line-2 {
+ position: relative;
+ display: flex;
+ left: 72%;
+ bottom: 140px;
+}
+
+.hamberger{
+ display: none;
+}
+[alt="bar-icon"] {
+ position: relative;
+ height: 20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .hamberger{
+        display: flex;
+    }
+    [alt="bar-icon"] {
+        position: relative;
+        height: 30px;
+       }
+       
+    .info-01  {
+       position: relative;
+       background-color: rgba(255, 255, 255, 0.189);
+       width: 200px;
+       padding: 5rem 1rem 1rem 2rem;
+       font-size: 1.1rem;
+       font-weight: 400;
+       z-index: 1;
+       height: 50px;
+       top: -12rem;
+       left: 56rem;
+      }
+      .info-01 p {
+       color: #fff;
+      }
+      .puzzle {
+       position: relative;
+       bottom: 6rem;
+       height: 40px;
+       width: 50%;
+       background-color: #fff;
+       border-radius: 15px;
+      }
+      .list-item, .uline::after{
+       display: none;
+      }
+      .content {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-bottom: 50px;
+      } 
+      .content h1 {
+       margin: 0;
+      }
+      .phone-call {
+        position: relative;
+        display: flex;
+        color: #fff;
+        width: 3%;
+        left: 80%;
+        bottom: 3rem;
+        cursor: pointer;
+       } 
+       nav::after{
+        display: none;
+       }
+      .button {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       margin: 0;
+       flex-grow: 1;
+      }
+      .info-02 {
+       margin: 0;
+      } 
+      
+}
+@media screen and (max-width:800px) {
+   .content h1 {
+       display: flex;
+       font-size: 25px;
+       margin-top: 20%;
+       margin-left: 25%;
+    }
+    .button  {
+       text-align: center;
+        justify-content: center;
+    }
+    .contact-info {
+     display: none;
+    }
+    .phone-call{
+     display: block;
+    }
+    .info-01 {
+     position: relative;
+     left: 5rem;
+     top: -1rem;
+     font-size: 18px;
+    }
+    .puzzle {
+     position: relative;
+     bottom: 95px;
+     left: 40px;
+    }
+    .info-02{
+      position: relative;
+      left: 5rem;
+      top: 1rem;
+      font-size: 16px;
+    }
+    .bulb {
+      position: relative;
+      bottom: 98px;
+      left: 40px;
+    } 
+    .nav::after {
+     display: inline-block;
+
+    }
+    .line-2{
+     display: none;
+    }
+    .line-1{
+        display: none;
+    }
+    .btn {
+     position: relative;
+     left: 45px;
+     top: 0.9rem;
+     width: 60%;
+     height: 50px;
+     font-size: 20px;
+     right: 3rem;
+    }
+    .phone-call {
+     display: none;
+    }
+    [alt="bar-icon"] {
+     position: relative;
+     left: 280px;
+     bottom: 35rem;
+     height: 45px;
+    }
+}
